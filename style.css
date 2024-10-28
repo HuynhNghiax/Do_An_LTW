@@ -8,9 +8,54 @@ body,html{
 }
 .head_trai{
     float: left;
-    margin-left: 100px;
+    padding-left: 100px;
+}
+.head_trai a{
+    text-decoration: none;
+    color: black;
+
+}
+.head_trai a span{
+    color: yellow;
 }
 .head_phai{
     float: right;
     margin-right: 100px;
+}
+.head_phai a{
+    text-decoration: none;
+    color: black;
+}
+.head_phai a span{
+    color: yellow;
+}
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.border{
+    margin: 0;
+    padding: 0;
+    border: black solid 2px;
+    height: 1200px;
+}
+.body_trai{
+    float: left;
+    width: 50%;
+}
+.body_phai{
+    float: right;
+    padding-right: 20px;
+    padding-top: 30px;
+    width: 48%;
+}
+
+.foot{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: black;
+    color: white;
+    padding-top: 50px;
 }
