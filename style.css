@@ -38,18 +38,30 @@ body,html{
     padding: 0;
     border: black solid 2px;
     height: 1200px;
+       
 }
-.body_trai{
-    float: left;
-    width: 50%;
+.tren_float{
+   height: 150px;
+}
+.body_trai {
+   float: left;   
+}
+.body_trai img{
+    width: 400px;
+    height: 140px;
 }
 .body_phai{
+    padding-top: 50px;
     float: right;
-    padding-right: 20px;
-    padding-top: 30px;
-    width: 48%;
+    width: 420px;
+    height: 100px;
 }
-
+.menu{
+    padding-top: 10px;
+    width: 800px;
+    height: 50px;
+    text-align: center;
+}
 .foot{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -58,4 +70,16 @@ body,html{
     background-color: black;
     color: white;
     padding-top: 50px;
+}
+.content{
+    width: 830px;
+    height: 600px;
+}
+.trinh_bay_trai{
+    float: left;
+    width: 300px;
+}
+.trinh_bay_phai{
+    float: right;
+    width: 520px;
 }
