@@ -37,31 +37,126 @@ body,html{
     margin: 0;
     padding: 0;
     border: black solid 2px;
-    height: 1200px;
+    height: 1900px;
        
 }
-.tren_float{
-   height: 150px;
+.pading{
+    width: 98%;
+    height: 100%;
+    padding: 10px;
 }
-.body_trai {
-   float: left;   
-}
-.body_trai img{
-    width: 400px;
-    height: 140px;
-}
-.body_phai{
-    padding-top: 50px;
-    float: right;
-    width: 420px;
-    height: 100px;
-}
+/* Logo và thanh tìm kiếm */
+.tren_float {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+  }
+  
+  .body_trai img {
+    width: 300px;
+  }
+  
+  .body_phai {
+    display: flex;
+    align-items: center;
+  }
+  
+  .body_phai input[type="text"] {
+    padding: 5px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .body_phai a {
+    background-color: #0073e6;
+    padding: 6px 10px;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: center;
+  }
 .menu{
-    padding-top: 10px;
-    width: 800px;
-    height: 50px;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0077c8;
+    padding: 10px 0;
 }
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.trinh_bay_trai {
+    width: 25%;
+    float: left;
+    height: 900px;
+  }
+  
+  .hang_may_bom, .tin_tuc_noi_bat {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .hang_may_bom h3, .tin_tuc_noi_bat h3 {
+    margin-bottom: 10px;
+    color: #0073e6;
+  }
+  
+  .hang_may_bom ul, .tin_tuc_noi_bat ul {
+    list-style-type: none;
+  }
+  
+  .hang_may_bom li, .tin_tuc_noi_bat li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .hang_may_bom li:last-child, .tin_tuc_noi_bat li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Cột phải */
+  .trinh_bay_phai {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    float: right;
+    height: 900px;
+  }
+  
+  .trinh_bay_phai > div {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Đối tác */
+  .trinh_bay_duoi {
+    padding: 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
+  .doi_tac_cua_chung_toi h3 {
+    margin-bottom: 10px;
+    color: #0073e6;
+  }
+  
+  .doi_tac_cua_chung_toi img {
+    margin: 10px;
+    width: 100px;
+  }
 .foot{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -70,16 +165,4 @@ body,html{
     background-color: black;
     color: white;
     padding-top: 50px;
-}
-.content{
-    width: 830px;
-    height: 600px;
-}
-.trinh_bay_trai{
-    float: left;
-    width: 300px;
-}
-.trinh_bay_phai{
-    float: right;
-    width: 520px;
 }
