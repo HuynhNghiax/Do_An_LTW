@@ -38,12 +38,10 @@ body,html{
   margin: 0;
   padding: 0;
   border: black solid 2px;
-  height: 1500px;
   width: 100%; 
 }
 .pading{
   width: 98%;
-  height: 100%;
   padding: 10px;
 }
 /* Logo và thanh tìm kiếm */
@@ -85,19 +83,28 @@ body,html{
   display: flex;
   justify-content: space-around;
   background-color: #0077c8;
-  padding: 10px 0;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
 }
 .menu a{
+  text-align: justify;
+  align-items: center;
   color: white;
   text-decoration: none;
-  padding: 10px 15px;
   font-weight: bold;
+  display: flex;
+  
+}
+.menu a:hover{
+  background-color: darkred;
 }
 
+
+/* trinhbay trai */
 .trinh_bay_trai {
   padding-top: 10px;
-  width: 25%;
-  float: left;
+  width: 250px;
+  grid-area: trai;
   height: 900px;
 }
   
@@ -126,20 +133,27 @@ body,html{
 .hang_may_bom li:last-child, .tin_tuc_noi_bat li:last-child {
   border-bottom: none;
 }
+
 .phan_trinh_bay{
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1500px 200px;
+  grid-template-areas: 
+  'trai phai'
+  'duoi duoi';
 }
   /* Cột phải */
 .trinh_bay_phai {
+  grid-area: phai;
   padding-left: 10px;
   padding-top: 10px;
-  width: 73%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   float: right;
-  height:1000px;
+
 }
   
 .trinh_bay_phai > div {
@@ -152,26 +166,44 @@ body,html{
   
   /* Đối tác */
 .trinh_bay_duoi {
+  border-top: black solid 2px;
   padding: 20px;
   background-color: #f1f1f1;
   text-align: center;
+  grid-area: duoi;
 }
   
 .doi_tac_cua_chung_toi h3 {
-  margin-bottom: 10px;
+  margin-top: 5px;
   color: #0073e6;
 }
   
 .doi_tac_cua_chung_toi img {
-  margin: 10px;
-  width: 100px;
+  
+  margin: -2px;
+  width: 235px;
+  height: 125px;
 }
 .foot{
   display: grid;
-  grid-template-columns: auto auto auto;
-  padding-left: 120px;
+  grid-template-columns: 35% 30% 35%;
+  padding-left: 150px;
   padding-right: 120px;
   background-color: black;
   color: white;
-  padding-top: 50px;
+  padding-top: 9px;
+}
+.inside_ban_do img{
+  height: 150px;
+  width: 300px;
+}
+.link_dan{
+  float: right;
+  display: flex;
+  padding-right: 60px;
+}
+.link_dan li{
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px;
 }
