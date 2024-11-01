@@ -1,168 +1,177 @@
 body,html{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .head{
-    background-color: aqua;
-    height: 30px;
+  background-color: aqua;
+  height: 30px;
 }
 .head_trai{
-    float: left;
-    padding-left: 100px;
+  float: left;
+  padding-left: 100px;
 }
 .head_trai a{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 
 }
 .head_trai a span{
-    color: yellow;
+  color: yellow;
 }
 .head_phai{
-    float: right;
-    margin-right: 100px;
+  float: right;
+  margin-right: 100px;
 }
 .head_phai a{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .head_phai a span{
-    color: yellow;
+  color: yellow;
 }
 .container{
-    padding-left: 100px;
-    padding-right: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  
 }
 .border{
-    margin: 0;
-    padding: 0;
-    border: black solid 2px;
-    height: 1900px;
-       
+  margin: 0;
+  padding: 0;
+  border: black solid 2px;
+  height: 1500px;
+  width: 100%; 
 }
 .pading{
-    width: 98%;
-    height: 100%;
-    padding: 10px;
+  width: 98%;
+  height: 100%;
+  padding: 10px;
 }
 /* Logo và thanh tìm kiếm */
 .tren_float {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
   }
   
-  .body_trai img {
-    width: 300px;
-  }
+.body_trai img {
+  width: 300px;
+}
   
-  .body_phai {
-    display: flex;
-    align-items: center;
-  }
+.body_phai {
+  display: flex;
+  align-items: center;
+}
   
-  .body_phai input[type="text"] {
-    padding: 5px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-  }
+.body_phai input[type="text"] {
+  padding: 5px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
   
-  .body_phai a {
-    background-color: #0073e6;
-    padding: 6px 10px;
-    color: #fff;
-    border-radius: 0 4px 4px 0;
-    display: flex;
-    align-items: center;
-  }
+.body_phai a {
+  background-color: #0073e6;
+  padding: 6px 10px;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  align-items: center;
+}
+
+  /* thanh menu */
 .menu{
-    display: flex;
-    justify-content: space-around;
-    background-color: #0077c8;
-    padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0077c8;
+  padding: 10px 0;
 }
 .menu a{
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
 }
 
 .trinh_bay_trai {
-    width: 25%;
-    float: left;
-    height: 900px;
-  }
+  padding-top: 10px;
+  width: 25%;
+  float: left;
+  height: 900px;
+}
   
-  .hang_may_bom, .tin_tuc_noi_bat {
-    background-color: #fff;
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
+.hang_may_bom, .tin_tuc_noi_bat {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
   
-  .hang_may_bom h3, .tin_tuc_noi_bat h3 {
-    margin-bottom: 10px;
-    color: #0073e6;
-  }
+.hang_may_bom h3, .tin_tuc_noi_bat h3 {
+  margin-bottom: 10px;
+  color: #0073e6;
+}
   
   .hang_may_bom ul, .tin_tuc_noi_bat ul {
-    list-style-type: none;
-  }
+  list-style-type: none;
+}
   
-  .hang_may_bom li, .tin_tuc_noi_bat li {
-    padding: 8px 0;
-    border-bottom: 1px solid #ddd;
-  }
+.hang_may_bom li, .tin_tuc_noi_bat li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
   
-  .hang_may_bom li:last-child, .tin_tuc_noi_bat li:last-child {
-    border-bottom: none;
-  }
-  
+.hang_may_bom li:last-child, .tin_tuc_noi_bat li:last-child {
+  border-bottom: none;
+}
+.phan_trinh_bay{
+  width: 100%;
+  height: 100%;
+}
   /* Cột phải */
-  .trinh_bay_phai {
-    width: 75%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    float: right;
-    height: 900px;
-  }
+.trinh_bay_phai {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 73%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  float: right;
+  height:1000px;
+}
   
-  .trinh_bay_phai > div {
-    background-color: #fff;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-  }
+.trinh_bay_phai > div {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
   
   /* Đối tác */
-  .trinh_bay_duoi {
-    padding: 20px;
-    background-color: #f1f1f1;
-    text-align: center;
-  }
+.trinh_bay_duoi {
+  padding: 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
   
-  .doi_tac_cua_chung_toi h3 {
-    margin-bottom: 10px;
-    color: #0073e6;
-  }
+.doi_tac_cua_chung_toi h3 {
+  margin-bottom: 10px;
+  color: #0073e6;
+}
   
-  .doi_tac_cua_chung_toi img {
-    margin: 10px;
-    width: 100px;
-  }
+.doi_tac_cua_chung_toi img {
+  margin: 10px;
+  width: 100px;
+}
 .foot{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding-left: 120px;
-    padding-right: 120px;
-    background-color: black;
-    color: white;
-    padding-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: black;
+  color: white;
+  padding-top: 50px;
 }
